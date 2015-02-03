@@ -30,9 +30,10 @@ Package.license('MIT');
 Because JSON is static, and continuous integration isn't. In an automated build environment, often times merging to `master` results in a release. With tools like `thor-scmversion`, automated release versioning is easy, but getting that version into your NodeJS package isn't. This utility provides a simple framework to represent package metadata as code instead of JSON.
 
 ### API
+* _#data_ Is the object that eventually becomes `package.json`. You may do with it what you will.
 * _#name(value), #version(value), #description(value), #license(value), #repo(value), #homepage(value)_ Do exactly what you think...
 * _#author(name, email)_ does too.
 * _#version_file(path)_ Is more interesting. It will try to read a version string from a file at `path` (relative to CWD)
 * _#keyword(word)_ Adds a keyword
 * _#depends(name, version)_ Adds a dependency
-* _#github_repo('owner/repo') Adds `repo`, `homepage`, and `bugs` fields to GitHub resources
+* _#github_repo('owner/repo')_ Adds `repo`, `homepage`, and `bugs` fields to GitHub resources
