@@ -13,9 +13,9 @@ Package = require('auto-package');
 Package.name('some-module');
 Package.author('John Manero', 'john.manero@gmail.com');
 Package.description('Dynamically generate package.json files for NodeJS modules');
-Package.version_file(); // Read version from ./VERSION
+Package.versionFile(); // Read version from ./VERSION
 
-Package.github_repo('jmanero/node-some-module');
+Package.githubRepo('jmanero/node-some-module');
 
 Package.keyword('some');
 Package.keyword('module');
@@ -33,10 +33,10 @@ Because JSON is static, and continuous integration isn't. In an automated build 
 * _#package_ Is the object that eventually becomes `package.json`. You may do with it what you will.
 * _#name(value), #version(value), #description(value), #license(value), #repo(value), #homepage(value)_ Do exactly what you think...
 * _#author(name, email)_ does too.
-* _#version_file(path)_ Is more interesting. It will try to read a version string from a file at `path` (relative to CWD)
+* _#versionFile(path)_ Is more interesting. It will try to read a version string from a file at `path` (relative to CWD)
 * _#keyword(word)_ Adds a keyword
 * _#depends(name, version)_ Adds a dependency
-* _#github_repo('owner/repo')_ Adds `repo`, `homepage`, and `bugs` fields to GitHub resources
+* _#githubRepo('owner/repo')_ Adds `repo`, `homepage`, and `bugs` fields to GitHub resources
 
 ## License
 The MIT License (MIT)
