@@ -27,6 +27,11 @@ exports.depends = function(name, version) {
   data.dependencies[name] = version || '*';
 };
 
+data.devDependencies = {};
+exports.devDepends = function(name, version) {
+  data.devDependencies[name] = version || '*';
+};
+
 exports.github_repo = function(url) {
   data.repository = {
     type: 'git',
