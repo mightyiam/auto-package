@@ -39,11 +39,16 @@ Because JSON is static, and continuous integration isn't. In an automated build 
 * _#github_repo('owner/repo')_ Adds `repo`, `homepage`, and `bugs` fields to GitHub resources
 
 ### CI setup tip
-Build your `package.json` before the CI tries to find it. For example, in Travis CI:
+Build your `package.json` before the CI tries to find it.
+
+Also, if you `require` any dependencies in `package.js`, install them as well.
+
+For example, in Travis CI:
+
 ```yml
 language: node_js
 node_js: stable
-before_install: 'npm i auto-package && node package.js'
+before_install: 'npm i auto-package some-dependency  && node package.js'
 ```
 
 ## License
