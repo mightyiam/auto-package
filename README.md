@@ -48,7 +48,7 @@ For example, in Travis CI:
 ```yml
 language: node_js
 node_js: stable
-before_install: 'npm i auto-package some-dependency && node package.js'
+before_install: 'npm i auto-package@^0.1.1 some-dependency@^1.1.5 && node package.js'
 ```
 
 ## License
