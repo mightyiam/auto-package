@@ -1,6 +1,6 @@
 auto-package
 ============
-Dynamically generate `package.json` files for autimated releases.
+Dynamically generate `package.json` files for automated releases.
 
 ### How does this even work?
 * Install it `npm install -g auto-package`
