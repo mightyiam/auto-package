@@ -8,7 +8,7 @@ Dynamically generate `package.json` files for automated releases.
 * Write a `package.js` file like this:
 
 ```js
-Package = require('auto-package');
+var Package = require('auto-package');
 
 Package.name('some-module');
 Package.author('John Manero', 'john.manero@gmail.com');
