@@ -35,7 +35,7 @@ exports.devDepends = function(name, version) {
 exports.github_repo = function(url) {
   data.repository = {
     type: 'git',
-    url: 'git@github.com:' + url + '.git'
+    url: 'https://github.com/' + url + '.git'
   };
 
   data.homepage = 'https://github.com/' + url;
