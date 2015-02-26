@@ -12,7 +12,7 @@ var data = exports.package = {};
 
 exports.version_file = function(file) {
   file = file || 'VERSION';
-  data.version = FS.readFileSync(Path.resolve(process.cwd(), file)).toString();
+  data.version = FS.readFileSync(Path.resolve(process.cwd(), file)).toString().trim();
 };
 
 exports.author = function(name, email) {
