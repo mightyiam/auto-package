@@ -10,7 +10,7 @@ var data = exports.package = {};
   };
 });
 
-exports.version_file = function(file) {
+exports.versionFile = function(file) {
   file = file || 'VERSION';
   data.version = FS.readFileSync(Path.resolve(process.cwd(), file)).toString().trim();
 };
@@ -32,7 +32,7 @@ exports.devDepends = function(name, version) {
   data.devDependencies[name] = version || '*';
 };
 
-exports.github_repo = function(url) {
+exports.githubRepo = function(url) {
   data.repository = {
     type: 'git',
     url: 'https://github.com/' + url + '.git'
