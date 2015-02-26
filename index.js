@@ -50,5 +50,5 @@ exports.keyword = function(word) {
 };
 
 setImmediate(function() {
-  FS.writeFileSync('./package.json', JSON.stringify(data, null, 2));
+  FS.writeFileSync('./package.json', JSON.stringify(data, null, 2) + '\n');
 });
