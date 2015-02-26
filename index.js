@@ -1,7 +1,7 @@
 var FS = require('fs');
 var Path = require('path');
 
-var data = exports.package = {};
+var data = exports.content = {};
 
 ['name', 'version', 'description', 'license', 'repo', 'homepage'].forEach(function(param) {
   exports[param] = function(set) {
