@@ -5,8 +5,11 @@ var LATEST = '1.0';
 function scheme(version) {
   module.exports = require(Path.join(__dirname, 'scheme', version));
   module.exports.scheme = scheme;
+
+  return module.exports;
 }
 
+// Load the default scheme
 scheme(LATEST);
 
 setImmediate(function() {

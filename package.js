@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-Package = require('./index');
+Package = require('./index').scheme('1.0');
 
 Package.name = 'auto-package';
 Package.author = 'John Manero <john.manero@gmail.com>';
