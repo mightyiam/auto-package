@@ -13,3 +13,7 @@ Package.devDepends('mocha');
 
 Package.versionFile();
 Package.githubRepo('jmanero/auto-package');
+Package.scripts = {
+  unit: 'mocha',
+  test: 'npm run unit'
+}
